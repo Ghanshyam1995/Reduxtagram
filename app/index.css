@@ -49,7 +49,29 @@ button:active{
     transform: translateY(2px);
     outline:none;
 }
+.user{
+    color:cornflowerblue;
+}
 
 .row{
    padding-left:6%;
+}
+.view-photo{
+    display:flex;
+}
+
+.posts img{
+    width:100%;
+}
+.posts{
+    flex:1;
+    display: flex;
+    flex-direction: column
+
+}
+
+.comments{
+flex:1;
+display: flex;
+flex-direction: column
 }

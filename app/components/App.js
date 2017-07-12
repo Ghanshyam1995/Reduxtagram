@@ -18,7 +18,7 @@ class App extends React.Component {
                         <div className="container">
                             <Switch>
                                 <Route exact path='/' component={Index} />
-                                <Route  exact path='/view' component={View}/>
+                                <Route exact path='/view' component={View}/>
                                 <Route render={function () {
                                     return (
                                         <div className="error">

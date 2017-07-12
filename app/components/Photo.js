@@ -2,13 +2,14 @@ var React = require("react");
 var Link = require("react-router-dom").Link;
 
 function Photo(props) {
+  
     var match=props.match;
     const { post, i, comments } = props;
     return (
        
         <figure className="photo-card col-sm-4 ">
             <div>
-                <Link  to={{pathname :'/view',search:'?postId='+post.code,params:post}}>
+                <Link  to={{pathname :'/view',search:'?postId='+post.code,params:{posts : props.posts,comments:comments,index:i}}}>
                     <img src={post.display_src}  alt={post.caption} />
                 </Link>
               

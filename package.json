@@ -1,10 +1,11 @@
 {
-  "name": "github-battle",
+  "name": "reduxtagram",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "build": "webpack -p --progress"
   },
   "babel": {
     "presets": [
@@ -17,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",
+    "compression-webpack-plugin": "^0.4.0",
     "prop-types": "^15.5.10",
     "query-string": "^4.3.4",
     "react": "^15.6.1",
@@ -34,6 +36,7 @@
     "html-webpack-plugin": "^2.29.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0",
+    "webpack-bundle-analyzer": "^2.8.2",
     "webpack-dev-server": "^2.5.0"
   }
 }

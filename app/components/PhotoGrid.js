@@ -1,24 +1,29 @@
-var React=require("react");
-var Photo=require("./Photo");
+var React = require("react");
 
-class PhotoGrid extends React.Component{
-    constructor(props){
+var Photo = require("./Photo");
+
+class PhotoGrid extends React.Component {
+    constructor(props) {
         super(props);
-      
+
     }
-    render(){
-        var match=this.props.match;
-        console.log(this.props)
-        var {comments=[]}=this.props;
-        var {posts=[]}=this.props;
-        return(
+    render() {
+        var match = this.props.match;
+        var { comments = [] } = this.props;
+        var { posts = [] } = this.props;
+        return (
             <div className="row">
-                 {posts.map((post,index)=> {
-                    return <Photo {...this.props} key={index} i={index} post={post}/>
-                 })}
+                {posts.map((post, index) => {
+
+                    return (
+                       
+                            <Photo {...this.props} key={index} i={index} post={post} />
+                      
+                    )
+                })}
             </div>
         )
     }
 }
 
-module.exports=PhotoGrid;
+module.exports = PhotoGrid;
