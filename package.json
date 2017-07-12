@@ -7,6 +7,7 @@
     "start": "webpack-dev-server --inline --hot",
     "build": "webpack -p --progress"
   },
+  "homepage": "https://ghanshyam1995.github.io/Reduxtagram",
   "babel": {
     "presets": [
       "env",
@@ -33,6 +34,7 @@
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "gh-pages": "^1.0.0",
     "html-webpack-plugin": "^2.29.0",
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0",

@@ -7,3 +7,8 @@ var App=require("./components/App");
 // var store=require("./store");
 
 ReactDOM.render(<App/>,document.getElementById('app'))
+if(module.hot){
+   module.hot.accept(App,()=>{
+       ReactDOM.render(<App/>,document.getElementById('app'))
+   })
+}

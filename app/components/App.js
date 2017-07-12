@@ -10,6 +10,8 @@ import Index from "./Index";
 import store from "../store";
 class App extends React.Component {
     render() {
+        var {posts,comments}=store.getState();
+        
         return (
             <div>
                 <h1 className="header">Reduxtagram</h1>
@@ -18,7 +20,7 @@ class App extends React.Component {
                         <div className="container">
                             <Switch>
                                 <Route exact path='/' component={Index} />
-                                <Route exact path='/view' component={View}/>
+                                <Route  exact path='/view/:postId' component={View} />
                                 <Route render={function () {
                                     return (
                                         <div className="error">
